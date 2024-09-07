@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="bg-white ">
+    <div class="flex flex-col justify-center items-center content-center m-12 gap-6">
+        <h1 class="text-4xl font-bold">I am a Calculator!</h1>
+        <div class="calculator h-[800px] w-[600px] bg-neutral-900 rounded-3xl flex flex-col justify-start items-center p-3 overflow-scroll overflow-x-scroll">
+            <div class="prev bg-neutral-900 items-end text-3xl flex justify-end rounded-3xl text-neutral-700 w-full h-1/2 p-2 overflow-scroll"></div>
+            <div class="next bg-neutral-900 items-end text-3xl flex justify-end rounded-3xl text-white w-full h-1/2 p-2"></div>
+            
+            <ul id="btn_container" class=" grid grid-rows-5 grid-flow-col gap-y-4 gap-x-12 py-4">
+                <li class="operator h-24 w-24 rounded-full bg-zinc-800 flex cursor-pointer text-white text-3xl justify-center items-center">(</li>
+                <li class="num h-24 w-24 rounded-full bg-zinc-600 flex cursor-pointer text-white text-3xl justify-center items-center">7</li>
+                <li class="num h-24 w-24 rounded-full bg-zinc-600 flex cursor-pointer text-white text-3xl justify-center items-center">4</li>
+                <li class="num h-24 w-24 rounded-full bg-zinc-600 flex cursor-pointer text-white text-3xl justify-center items-center">1</li>
+                <li class="clear h-24 w-24 rounded-full bg-zinc-600 flex cursor-pointer text-white text-3xl justify-center items-center">C</li>
+                <li class="operator h-24 w-24 rounded-full bg-zinc-800 flex cursor-pointer text-white text-3xl justify-center items-center">)</li>
+                <li class="num h-24 w-24 rounded-full bg-zinc-600 flex cursor-pointer text-white text-3xl justify-center items-center">8</li>
+                <li class="num h-24 w-24 rounded-full bg-zinc-600 flex cursor-pointer text-white text-3xl justify-center items-center">5</li>
+                <li class="num h-24 w-24 rounded-full bg-zinc-600 flex cursor-pointer text-white text-3xl justify-center items-center">2</li>
+                <li class="num h-24 w-24 rounded-full bg-zinc-600 flex cursor-pointer text-white text-3xl justify-center items-center">0</li>
+                <li class="del h-24 w-24 rounded-full bg-zinc-800 flex cursor-pointer text-white text-3xl justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-delete"><path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/><line x1="18" y1="9" x2="12" y2="15"/><line x1="12" y1="9" x2="18" y2="15"/></svg>
+                </li>
+                <li class="num h-24 w-24 rounded-full bg-zinc-600 flex cursor-pointer text-white text-3xl justify-center items-center">9</li>
+                <li class="num h-24 w-24 rounded-full bg-zinc-600 flex cursor-pointer text-white text-3xl justify-center items-center">6</li>
+                <li class="num h-24 w-24 rounded-full bg-zinc-600 flex cursor-pointer text-white text-3xl justify-center items-center">3</li>
+                <li class="num h-24 w-24 rounded-full bg-zinc-600 flex cursor-pointer text-white text-3xl justify-center items-center">.</li>
+                <li class="operator h-24 w-24 rounded-full bg-zinc-800 flex cursor-pointer text-white text-3xl justify-center items-center">/</li>
+                <li class="operator h-24 w-24 rounded-full bg-zinc-800 flex cursor-pointer text-white text-3xl justify-center items-center">*</li>
+                <li class="operator h-24 w-24 rounded-full bg-zinc-800 flex cursor-pointer text-white text-3xl justify-center items-center">-</li>
+                <li class="operator h-24 w-24 rounded-full bg-zinc-800 flex cursor-pointer text-white text-3xl justify-center items-center">+</li>
+                <li class="equal h-24 w-24 rounded-full bg-[rgb(255,159,10)] flex cursor-pointer text-white text-3xl justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                        <path d="M4 8H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M4 16H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                  </li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
